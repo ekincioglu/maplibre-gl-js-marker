@@ -1,0 +1,113 @@
+ body {
+   margin: 0;
+   padding: 0;
+   background-color: #292929;
+ }
+ 
+ #title {
+	text-align: center;
+	position: relative;
+	display: block;
+	margin-top: 30px;
+	color: white;
+ }
+ 
+  #subtitle {
+	text-align: center;
+	position: relative;
+	display: block;
+	margin-top: 10px;
+	color: cyan;
+ }
+ 
+ #map-container {
+   margin: auto;
+   display: flex;
+   justify-content: center;
+ }
+
+ #map {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   width: 1200px;
+   height: 650px;
+   border: solid 1px #000000;
+   margin-top: 200px; /*nur für abstand*/
+ }
+ 
+ #fly {
+	display: block;
+	position: relative;
+	margin: 0px auto;
+	width: 120px;
+	height: 40px;
+	padding: 10px;
+	border: none;
+	border-radius: 3px;
+	font-size: 12px;
+	text-align: center;
+	color: white;
+	background: grey;
+	cursor: pointer;
+}
+
+.mapboxgl-popup-close-button {
+  display: none;
+}
+
+.mapboxgl-popup-content {
+  padding: 0;
+  background-color: transparent;
+}
+
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip, .maplibregl-popup-anchor-bottom .maplibregl-popup-tip { border-top-color: transparent; }
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip, .maplibregl-popup-anchor-top .maplibregl-popup-tip { border-bottom-color: transparent; }
+.mapboxgl-popup-anchor-left .mapboxgl-popup-tip, .maplibregl-popup-anchor-left .maplibregl-popup-tip { border-right-color: transparent; }
+.mapboxgl-popup-anchor-right .mapboxgl-popup-tip, .maplibregl-popup-anchor-right .maplibregl-popup-tip { border-left-color: transparent; }
+
+.mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip, .maplibregl-popup-anchor-top-right .maplibregl-popup-tip { border-bottom-color: transparent; }
+.mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip, .maplibregl-popup-anchor-top-left .maplibregl-popup-tip { border-bottom-color: transparent; }
+.mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip, .maplibregl-popup-anchor-bottom-right .maplibregl-popup-tip { border-top-color: transparent; }
+.mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip, .maplibregl-popup-anchor-bottom-left .maplibregl-popup-tip { border-top-color: transparent; }
+
+
+#menu {
+	background: #fff;
+	position: absolute;
+	z-index: 10000;
+	top: 780px;
+	/*right: 28%;*/
+	width: 120px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#menu a {
+	font-size: 13px;
+	color: #404040;
+	display: block;
+	margin: 0;
+	padding: 0;
+	padding: 3px;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+	text-align: center;
+}
+
+#menu a:last-child {
+	border: none;
+}
+
+#menu a:hover {
+	background-color: white;
+	color: #404040;
+}
+
+#menu a.active {
+	background-color: grey;
+	color: #ffffff;
+}
+
+#menu a.active:hover {
+	background: grey;
+}
